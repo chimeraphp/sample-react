@@ -1,0 +1,40 @@
+{
+    "name": "chimera/sample-react",
+    "description": "A very simple test project using chimera and react/http",
+    "type": "project",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "chimera/bus-tactician": "^0.1",
+        "chimera/di-symfony": "^0.1@dev",
+        "chimera/mapping": "^0.1",
+        "chimera/routing-expressive": "^0.1",
+        "lcobucci/di-builder": "^5.5",
+        "middlewares/response-time": "^1.0",
+        "react/http": "^0.8",
+        "wyrihaximus/react-psr-3-stdio": "^2.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lcobucci\\MyApi\\": ["config", "public", "src"]
+        }
+    },
+    "scripts": {
+        "cleanup": [
+            "rm -rf var",
+            "@composer install --no-dev -a",
+            "mkdir -p var/cache var/tmp"
+        ],
+        "serve": [
+            "@cleanup",
+            "@php -d opcache.enable_cli=1 -d opcache.fast_shutdown=1 -d opcache.max_wasted_percentage=10 -d opcache.validate_timestamps=0 -d opcache.enable_file_override=1 -d expose_php=off -d zend.assertions=-1 public/index.php"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services ../../vendor/symfony/dependency-injection/Loader/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="cache.filesystem_path">%app.basedir%var/cache</parameter>
+        <parameter key="cache.enabled">true</parameter>
+        <parameter key="annotations.debug_enabled">false</parameter>
+        <parameter key="zend_expressive.debug">false</parameter>
+
+        <parameter key="my-api.router_config" type="collection">
+            <parameter key="cache_enabled">%cache.enabled%</parameter>
+            <parameter key="cache_file">%app.basedir%var/cache/my-api_routing.php</parameter>
+        </parameter>
+    </parameters>
+</container>

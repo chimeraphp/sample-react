@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services ../../vendor/symfony/dependency-injection/Loader/schema/dic/services/services-1.0.xsd">
+    <services>
+        <defaults public="false" />
+
+        <service id="books" class="Lcobucci\MyApi\InMemoryBooks" />
+
+        <service id="books.handler.fetch_one" class="Lcobucci\MyApi\Retrieval\FetchBookHandler">
+            <argument type="service" id="books" />
+        </service>
+
+        <service id="books.handler.find" class="Lcobucci\MyApi\Retrieval\FindBooksHandler">
+            <argument type="service" id="books" />
+        </service>
+
+        <service id="books.handler.add" class="Lcobucci\MyApi\Creation\AddToCollectionHandler">
+            <argument type="service" id="books" />
+        </service>
+    </services>
+</container>
