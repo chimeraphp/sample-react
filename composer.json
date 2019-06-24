@@ -8,12 +8,12 @@
     },
     "prefer-stable": true,
     "require": {
-        "php": "^7.2",
-        "chimera/bus-tactician": "^0.2",
-        "chimera/di-symfony": "^0.2",
-        "chimera/mapping": "^0.2",
-        "chimera/routing-expressive": "^0.2",
-        "lcobucci/di-builder": "^5.5",
+        "php": "^7.3",
+        "chimera/bus-tactician": "^0.3",
+        "chimera/di-symfony": "^0.3",
+        "chimera/mapping": "^0.3",
+        "chimera/routing-expressive": "^0.3",
+        "lcobucci/di-builder": "^5.6",
         "middlewares/response-time": "^1.0",
         "react/http": "^0.8",
         "wyrihaximus/react-psr-3-stdio": "^2.1"
