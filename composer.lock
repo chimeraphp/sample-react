@@ -61,19 +61,20 @@
         },
         {
             "name": "chimera/di-symfony",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/di-symfony.git",
-                "reference": "4b87a310c101c62789b3d6b51e5912bf04ace386"
+                "reference": "0be87b5a601f7d40fc1ada80e93a9144f3f97337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/4b87a310c101c62789b3d6b51e5912bf04ace386",
-                "reference": "4b87a310c101c62789b3d6b51e5912bf04ace386",
+                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/0be87b5a601f7d40fc1ada80e93a9144f3f97337",
+                "reference": "0be87b5a601f7d40fc1ada80e93a9144f3f97337",
                 "shasum": ""
             },
             "require": {
+                "chimera/routing": "^0.3",
                 "lcobucci/di-builder": "^5.6",
                 "php": "^7.3 || 8.0"
             },
@@ -118,7 +119,7 @@
                 }
             ],
             "description": "A set of compiler passes that connects all components together",
-            "time": "2019-06-24T12:43:28+00:00"
+            "time": "2019-08-08T11:12:27+00:00"
         },
         {
             "name": "chimera/foundation",
