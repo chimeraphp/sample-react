@@ -1465,16 +1465,16 @@
         },
         {
             "name": "react/cache",
-            "version": "v0.5.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/cache.git",
-                "reference": "7d7da7fb7574d471904ba357b39bbf110ccdbf66"
+                "reference": "aa10d63a1b40a36a486bdf527f28bac607ee6466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/7d7da7fb7574d471904ba357b39bbf110ccdbf66",
-                "reference": "7d7da7fb7574d471904ba357b39bbf110ccdbf66",
+                "url": "https://api.github.com/repos/reactphp/cache/zipball/aa10d63a1b40a36a486bdf527f28bac607ee6466",
+                "reference": "aa10d63a1b40a36a486bdf527f28bac607ee6466",
                 "shasum": ""
             },
             "require": {
@@ -1501,29 +1501,28 @@
                 "promise",
                 "reactphp"
             ],
-            "time": "2018-06-25T12:52:40+00:00"
+            "time": "2019-07-11T13:45:28+00:00"
         },
         {
             "name": "react/dns",
-            "version": "v0.4.17",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns.git",
-                "reference": "0f30c6ceb71504d359d51132a97e1703051f1589"
+                "reference": "a214d90c2884dac18d0cac6176202f247b66d762"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/0f30c6ceb71504d359d51132a97e1703051f1589",
-                "reference": "0f30c6ceb71504d359d51132a97e1703051f1589",
+                "url": "https://api.github.com/repos/reactphp/dns/zipball/a214d90c2884dac18d0cac6176202f247b66d762",
+                "reference": "a214d90c2884dac18d0cac6176202f247b66d762",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "react/cache": "^1.0 || ^0.6 || ^0.5 || ^0.4 || ^0.3",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
-                "react/promise": "^2.1 || ^1.2.1",
-                "react/promise-timer": "^1.2",
-                "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4.5"
+                "react/cache": "^1.0 || ^0.6 || ^0.5",
+                "react/event-loop": "^1.0 || ^0.5",
+                "react/promise": "^2.7 || ^1.2.1",
+                "react/promise-timer": "^1.2"
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
@@ -1546,7 +1545,7 @@
                 "dns-resolver",
                 "reactphp"
             ],
-            "time": "2019-04-01T07:31:55+00:00"
+            "time": "2019-08-15T09:06:31+00:00"
         },
         {
             "name": "react/event-loop",
@@ -1592,16 +1591,16 @@
         },
         {
             "name": "react/http",
-            "version": "v0.8.4",
+            "version": "v0.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/http.git",
-                "reference": "b29ab96557ac5c53e738fcb26f73f631a3f81f1a"
+                "reference": "5f2ce4da6d30779ab1e6b95a0afac3e0e5595f64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/http/zipball/b29ab96557ac5c53e738fcb26f73f631a3f81f1a",
-                "reference": "b29ab96557ac5c53e738fcb26f73f631a3f81f1a",
+                "url": "https://api.github.com/repos/reactphp/http/zipball/5f2ce4da6d30779ab1e6b95a0afac3e0e5595f64",
+                "reference": "5f2ce4da6d30779ab1e6b95a0afac3e0e5595f64",
                 "shasum": ""
             },
             "require": {
@@ -1636,7 +1635,7 @@
                 "server",
                 "streaming"
             ],
-            "time": "2019-01-16T07:26:32+00:00"
+            "time": "2019-10-29T14:17:24+00:00"
         },
         {
             "name": "react/promise",
@@ -1686,26 +1685,26 @@
         },
         {
             "name": "react/promise-stream",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise-stream.git",
-                "reference": "00e269d611e9c9a29356aef64c07f7e513e73dc9"
+                "reference": "6384d8b76cf7dcc44b0bf3343fb2b2928412d1fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise-stream/zipball/00e269d611e9c9a29356aef64c07f7e513e73dc9",
-                "reference": "00e269d611e9c9a29356aef64c07f7e513e73dc9",
+                "url": "https://api.github.com/repos/reactphp/promise-stream/zipball/6384d8b76cf7dcc44b0bf3343fb2b2928412d1fe",
+                "reference": "6384d8b76cf7dcc44b0bf3343fb2b2928412d1fe",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3",
                 "react/promise": "^2.1 || ^1.2",
-                "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4 || ^0.3"
+                "react/stream": "^1.0 || ^0.7 || ^0.6 || ^0.5 || ^0.4.6"
             },
             "require-dev": {
                 "clue/block-react": "^1.0",
-                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35",
+                "phpunit/phpunit": "^7.0 || ^6.4 || ^5.7 || ^4.8.35",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3",
                 "react/promise-timer": "^1.0"
             },
@@ -1738,7 +1737,7 @@
                 "stream",
                 "unwrap"
             ],
-            "time": "2017-12-22T12:02:05+00:00"
+            "time": "2019-07-03T12:29:10+00:00"
         },
         {
             "name": "react/promise-timer",
@@ -1795,22 +1794,22 @@
         },
         {
             "name": "react/socket",
-            "version": "v1.2.1",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket.git",
-                "reference": "4d49bd3d6ca0257ada8645dd0f8a2f1885e290b3"
+                "reference": "10f0629ec83ea0fa22597f348623f554227e3ca0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket/zipball/4d49bd3d6ca0257ada8645dd0f8a2f1885e290b3",
-                "reference": "4d49bd3d6ca0257ada8645dd0f8a2f1885e290b3",
+                "url": "https://api.github.com/repos/reactphp/socket/zipball/10f0629ec83ea0fa22597f348623f554227e3ca0",
+                "reference": "10f0629ec83ea0fa22597f348623f554227e3ca0",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
                 "php": ">=5.3.0",
-                "react/dns": "^0.4.13",
+                "react/dns": "^1.0 || ^0.4.13",
                 "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
                 "react/promise": "^2.6.0 || ^1.2.1",
                 "react/promise-timer": "^1.4.0",
@@ -1838,7 +1837,7 @@
                 "reactphp",
                 "stream"
             ],
-            "time": "2019-06-03T09:04:16+00:00"
+            "time": "2019-07-10T10:11:14+00:00"
         },
         {
             "name": "react/stream",
@@ -3259,12 +3258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761"
+                "reference": "f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea693fa060702164985511acc3ceb5389c9ac761",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa",
+                "reference": "f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa",
                 "shasum": ""
             },
             "conflict": {
@@ -3287,7 +3286,7 @@
                 "contao/core": ">=2,<3.5.39",
                 "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
                 "contao/listing-bundle": ">=4,<4.4.8",
-                "contao/newsletter-bundle": ">=4,<4.1",
+                "datadog/dd-trace": ">=0.30,<0.30.2",
                 "david-garcia/phpwhois": "<=4.3.1",
                 "doctrine/annotations": ">=1,<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
@@ -3330,9 +3329,9 @@
                 "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
                 "league/commonmark": "<0.18.3",
-                "magento/magento1ce": "<1.9.4.1",
-                "magento/magento1ee": ">=1.9,<1.14.4.1",
-                "magento/product-community-edition": ">=2,<2.2.8|>=2.3,<2.3.1",
+                "magento/magento1ce": "<1.9.4.3",
+                "magento/magento1ee": ">=1,<1.14.4.3",
+                "magento/product-community-edition": ">=2,<2.2.10|>=2.3,<2.3.3",
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
                 "onelogin/php-saml": "<2.10.4",
@@ -3375,6 +3374,7 @@
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "stormpath/sdk": ">=0,<9.9.99",
+                "studio-42/elfinder": "<2.1.48",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
@@ -3466,7 +3466,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-07-18T15:17:58+00:00"
+            "time": "2019-10-29T22:11:03+00:00"
         }
     ],
     "aliases": [],
