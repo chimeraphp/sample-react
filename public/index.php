@@ -7,9 +7,7 @@ use Chimera\Routing\Application;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
-use React\Http\Middleware\LimitConcurrentRequestsMiddleware;
-use React\Http\Middleware\RequestBodyBufferMiddleware;
-use React\Http\StreamingServer;
+use React\Http\Server;
 use React\Socket\Server as SocketServer;
 use Throwable;
 use const PHP_EOL;
@@ -24,13 +22,7 @@ assert($app instanceof Application);
 $loop   = $container->get(LoopInterface::class);
 $logger = $container->get(LoggerInterface::class);
 
-$server = new StreamingServer(
-    [
-        new LimitConcurrentRequestsMiddleware(100),
-        new RequestBodyBufferMiddleware(10485760),
-        [$app, 'handle'],
-    ]
-);
+$server = new Server($loop, [$app, 'handle']);
 
 $server->on(
     'error',
