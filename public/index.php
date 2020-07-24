@@ -7,6 +7,7 @@ use Chimera\Routing\Application;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
+use React\Http\Middleware\StreamingRequestMiddleware;
 use React\Http\Server;
 use React\Socket\Server as SocketServer;
 use Throwable;
@@ -22,11 +23,11 @@ assert($app instanceof Application);
 $loop   = $container->get(LoopInterface::class);
 $logger = $container->get(LoggerInterface::class);
 
-$server = new Server($loop, [$app, 'handle']);
+$server = new Server($loop, new StreamingRequestMiddleware(), [$app, 'handle']);
 
 $server->on(
     'error',
-    function (Throwable $e) use ($logger): void {
+    static function (Throwable $e) use ($logger): void {
         $logger->error('{message}', ['message' => $e->getMessage()]);
         $logger->debug((string) $e);
     }
