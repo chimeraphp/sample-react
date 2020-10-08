@@ -8,7 +8,8 @@
     },
     "prefer-stable": true,
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
+        "ext-json": "*",
         "chimera/bus-tactician": "^0.3",
         "chimera/di-symfony": "^0.3",
         "chimera/mapping": "^0.3",
