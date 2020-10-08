@@ -13,18 +13,15 @@ use Lcobucci\MyApi\Books;
  */
 final class FetchBookHandler
 {
-    /**
-     * @var Books
-     */
-    private $collection;
+    private Books $books;
 
-    public function __construct(Books $collection)
+    public function __construct(Books $books)
     {
-        $this->collection = $collection;
+        $this->books = $books;
     }
 
     public function handle(FetchBook $query): Book
     {
-        return $this->collection->find($query->id);
+        return $this->books->find($query->id);
     }
 }

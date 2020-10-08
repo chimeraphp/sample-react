@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace Lcobucci\MyApi\Retrieval;
 
 use Chimera\Mapping as Chimera;
-use Lcobucci\MyApi\Book;
 use Lcobucci\MyApi\Books;
 
 /**
@@ -13,21 +12,15 @@ use Lcobucci\MyApi\Books;
  */
 final class FindBooksHandler
 {
-    /**
-     * @var Books
-     */
-    private $collection;
+    private Books $books;
 
-    public function __construct(Books $collection)
+    public function __construct(Books $books)
     {
-        $this->collection = $collection;
+        $this->books = $books;
     }
 
-    /**
-     * @return Book[]
-     */
     public function handle(FindBooks $query): array
     {
-        return $this->collection->findAll($query->title, $query->author);
+        return $this->books->findAll($query->title, $query->author);
     }
 }

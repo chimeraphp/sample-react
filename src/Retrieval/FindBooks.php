@@ -8,15 +8,8 @@ use Chimera\ServiceBus\ReadModelConverter\Query;
 
 final class FindBooks implements Query
 {
-    /**
-     * @var string|null
-     */
-    public $title;
-
-    /**
-     * @var string|null
-     */
-    public $author;
+    public ?string $title;
+    public ?string $author;
 
     private function __construct(?string $title, ?string $author)
     {

@@ -10,10 +10,7 @@ use Ramsey\Uuid\UuidInterface;
 
 final class FetchBook implements Query
 {
-    /**
-     * @var UuidInterface
-     */
-    public $id;
+    public UuidInterface $id;
 
     private function __construct(UuidInterface $id)
     {

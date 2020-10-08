@@ -7,20 +7,9 @@ use Ramsey\Uuid\UuidInterface;
 
 final class Book
 {
-    /**
-     * @var UuidInterface
-     */
-    private $id;
-
-    /**
-     * @var string
-     */
-    private $title;
-
-    /**
-     * @var string
-     */
-    private $author;
+    private UuidInterface $id;
+    private string $title;
+    private string $author;
 
     public function __construct(UuidInterface $id, string $title, string $author)
     {

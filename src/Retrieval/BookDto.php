@@ -7,26 +7,15 @@ use Lcobucci\MyApi\Book;
 
 final class BookDto
 {
-    /**
-     * @var string
-     */
-    public $id;
+    public string $id;
+    public string $title;
+    public string $author;
 
-    /**
-     * @var string
-     */
-    public $title;
-
-    /**
-     * @var string
-     */
-    public $name;
-
-    private function __construct(string $id, string $title, string $name)
+    private function __construct(string $id, string $title, string $author)
     {
-        $this->id    = $id;
-        $this->title = $title;
-        $this->name  = $name;
+        $this->id     = $id;
+        $this->title  = $title;
+        $this->author = $author;
     }
 
     public static function fromEntity(Book $book): self
