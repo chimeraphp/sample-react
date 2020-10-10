@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "3c2f7e37-6ab5-443d-bc58-68c36bc5fa00",
+		"name": "Sample project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create book",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "33aab6c8-31a3-413e-bc95-c0fdc3f2cdb0",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Response has location header\", function () {",
+							"    pm.response.to.have.header(\"Location\");",
+							"    ",
+							"    pm.globals.set(\"created_book_path\", pm.response.headers.get(\"Location\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "{{book_title}}",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "{{book_author}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_uri}}/books",
+					"host": [
+						"{{base_uri}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List books",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4deb9a7f-77b2-4c16-bca2-e6b096556927",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response body has correct structure\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    ",
+							"    pm.expect(jsonData).to.have.lengthOf(1);",
+							"    pm.expect(jsonData[0].title).to.eql(pm.environment.get(\"book_title\"));",
+							"    pm.expect(jsonData[0].author).to.eql(pm.environment.get(\"book_author\"));",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_uri}}/books",
+					"host": [
+						"{{base_uri}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch book",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a4c644d8-31aa-4d05-9440-ca4a10e9d067",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response body has correct structure\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    ",
+							"    pm.expect(jsonData.title).to.eql(pm.environment.get(\"book_title\"));",
+							"    pm.expect(jsonData.author).to.eql(pm.environment.get(\"book_author\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_uri}}{{created_book_path}}",
+					"host": [
+						"{{base_uri}}{{created_book_path}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

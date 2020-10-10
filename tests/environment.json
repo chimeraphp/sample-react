@@ -1,0 +1,29 @@
+{
+	"id": "c19e1fef-c5b9-4338-81d2-b2c3f173d90f",
+	"name": "Local",
+	"values": [
+		{
+			"key": "base_uri",
+			"value": "http://localhost",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "book_title",
+			"value": "Testing",
+			"type": "text",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "book_author",
+			"value": "Tester",
+			"type": "text",
+			"description": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-10-08T20:32:52.866Z",
+	"_postman_exported_using": "Postman/6.7.4"
+}

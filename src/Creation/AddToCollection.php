@@ -9,20 +9,9 @@ use Ramsey\Uuid\UuidInterface;
 
 final class AddToCollection
 {
-    /**
-     * @var UuidInterface
-     */
-    public $id;
-
-    /**
-     * @var string
-     */
-    public $title;
-
-    /**
-     * @var string
-     */
-    public $author;
+    public UuidInterface $id;
+    public string $title;
+    public string $author;
 
     private function __construct(UuidInterface $id, string $title, string $author)
     {

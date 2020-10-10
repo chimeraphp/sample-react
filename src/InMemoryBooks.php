@@ -14,7 +14,7 @@ final class InMemoryBooks implements Books
     /**
      * @var Book[]
      */
-    private $items = [];
+    private array $items = [];
 
     /**
      * {@inheritdoc}
@@ -49,10 +49,9 @@ final class InMemoryBooks implements Books
 
         return array_filter(
             $items,
-            function (Book $book) use ($title, $author) {
-                return ($title && mb_stripos($book->getTitle(), $title) !== false)
-                    || ($author && mb_stripos($book->getAuthor(), $author) !== false);
-            }
+            static fn (Book $book): bool =>
+                ($title && mb_stripos($book->getTitle(), $title) !== false)
+                || ($author && mb_stripos($book->getAuthor(), $author) !== false)
         );
     }
 }
