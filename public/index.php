@@ -33,10 +33,10 @@ $server->on(
     }
 );
 
-$socket = new SocketServer('tcp://0.0.0.0:8080', $loop);
+$socket = new SocketServer('tcp://0.0.0.0:80', $loop);
 $server->listen($socket);
 
-echo 'Listening on http://0.0.0.0:8080', PHP_EOL;
+echo 'Listening on http://0.0.0.0:80', PHP_EOL;
 echo 'Press Ctrl-C to quit.', PHP_EOL;
 
 $loop->run();
