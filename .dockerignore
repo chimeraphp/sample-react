@@ -1,0 +1,10 @@
+/.git
+/.github
+/var
+/vendor
+/.dockerignore
+/.gitignore
+/Dockerfile
+/LICENSE
+/README.md
+/tests
