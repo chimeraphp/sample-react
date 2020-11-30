@@ -2355,16 +2355,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v5.1.8",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "829ca6bceaf68036a123a13a979f3c89289eae78"
+                "reference": "98cec9b9f410a4832e239949a41d47182862c3a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/829ca6bceaf68036a123a13a979f3c89289eae78",
-                "reference": "829ca6bceaf68036a123a13a979f3c89289eae78",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/98cec9b9f410a4832e239949a41d47182862c3a4",
+                "reference": "98cec9b9f410a4832e239949a41d47182862c3a4",
                 "shasum": ""
             },
             "require": {
@@ -2435,7 +2435,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-27T10:11:13+00:00"
+            "time": "2020-11-28T11:24:18+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -3699,12 +3699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "563faed0e5e24a5b639fbd30d8f3921bb11fccc0"
+                "reference": "fa05999280434eacf621cc78ab9179d9394c7998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/563faed0e5e24a5b639fbd30d8f3921bb11fccc0",
-                "reference": "563faed0e5e24a5b639fbd30d8f3921bb11fccc0",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fa05999280434eacf621cc78ab9179d9394c7998",
+                "reference": "fa05999280434eacf621cc78ab9179d9394c7998",
                 "shasum": ""
             },
             "conflict": {
@@ -3828,7 +3828,7 @@
                 "paragonie/random_compat": "<2",
                 "passbolt/passbolt_api": "<2.11",
                 "paypal/merchant-sdk-php": "<3.12",
-                "pear/archive_tar": "<1.4.4",
+                "pear/archive_tar": "<1.4.11",
                 "personnummer/personnummer": "<3.0.2",
                 "phpfastcache/phpfastcache": ">=5,<5.0.13",
                 "phpmailer/phpmailer": "<6.1.6",
@@ -4005,7 +4005,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-23T21:01:44+00:00"
+            "time": "2020-11-26T07:02:13+00:00"
         }
     ],
     "aliases": [],
