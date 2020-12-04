@@ -16,7 +16,7 @@
         "chimera/routing-expressive": "^0.3",
         "lcobucci/di-builder": "^5.8",
         "middlewares/response-time": "^2.0",
-        "react/http": "^1.1",
+        "react/http": "^1.2",
         "wyrihaximus/react-psr-3-stdio": "^2.1"
     },
     "require-dev": {
