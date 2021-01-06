@@ -10,11 +10,13 @@
     "require": {
         "php": "^7.4",
         "ext-json": "*",
-        "chimera/bus-tactician": "^0.3",
-        "chimera/di-symfony": "^0.3",
-        "chimera/mapping": "^0.3",
-        "chimera/routing-expressive": "^0.3",
-        "lcobucci/di-builder": "^5.8",
+        "chimera/bus-tactician": "^0.4.x-dev@dev",
+        "chimera/di-symfony": "^0.4.x-dev@dev",
+        "chimera/foundation": "^0.4.x-dev@dev",
+        "chimera/mapping": "^0.4.x-dev@dev",
+        "chimera/routing": "^0.4.x-dev@dev",
+        "chimera/routing-mezzio": "^0.4.x-dev@dev",
+        "lcobucci/di-builder": "^7.0",
         "middlewares/response-time": "^2.0",
         "react/http": "^1.2",
         "wyrihaximus/react-psr-3-stdio": "^2.1"

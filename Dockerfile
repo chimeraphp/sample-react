@@ -3,7 +3,8 @@ FROM php:7.4-alpine as base
 ENV APPLICATION_MODE=prod
 WORKDIR /opt/chimera/sample-react
 
-RUN apk add --no-cache --virtual .build $PHPIZE_DEPS \
+RUN apk add --no-cache git \
+    && apk add --no-cache --virtual .build $PHPIZE_DEPS \
     && docker-php-ext-install pcntl opcache \
     && rm -f "/usr/src/php.tar.xz" "/usr/src/php.tar.xz.asc" \
     && docker-php-source delete \
