@@ -12,7 +12,7 @@ use function dirname;
 
 AnnotationRegistry::registerLoader('class_exists');
 
-$builder = new ContainerBuilder();
+$builder = ContainerBuilder::default(__FILE__, __NAMESPACE__);
 $root    = dirname(__DIR__);
 
 return $builder->setDumpDir($root . '/var/tmp')
