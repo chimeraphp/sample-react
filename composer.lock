@@ -1665,16 +1665,16 @@
         },
         {
             "name": "mezzio/mezzio-template",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-template.git",
-                "reference": "7d811b8d3fc4af260b735f4d7b0ff93fb7d90e6d"
+                "reference": "8f36e80b3ac6d794cf324134b368ec00bb4cfdbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-template/zipball/7d811b8d3fc4af260b735f4d7b0ff93fb7d90e6d",
-                "reference": "7d811b8d3fc4af260b735f4d7b0ff93fb7d90e6d",
+                "url": "https://api.github.com/repos/mezzio/mezzio-template/zipball/8f36e80b3ac6d794cf324134b368ec00bb4cfdbe",
+                "reference": "8f36e80b3ac6d794cf324134b368ec00bb4cfdbe",
                 "shasum": ""
             },
             "require": {
@@ -1717,7 +1717,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-01-23T03:36:21+00:00"
+            "time": "2021-01-23T03:51:53+00:00"
         },
         {
             "name": "middlewares/negotiation",
