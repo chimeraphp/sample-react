@@ -134,12 +134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/di-symfony.git",
-                "reference": "5c9b68040e64a31bedcb9cb63d0ec4354c1e16a3"
+                "reference": "d58158738d4357f2915ebc11ef204b89dc5e6291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/5c9b68040e64a31bedcb9cb63d0ec4354c1e16a3",
-                "reference": "5c9b68040e64a31bedcb9cb63d0ec4354c1e16a3",
+                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/d58158738d4357f2915ebc11ef204b89dc5e6291",
+                "reference": "d58158738d4357f2915ebc11ef204b89dc5e6291",
                 "shasum": ""
             },
             "require": {
@@ -153,7 +153,7 @@
                 "chimera/mapping": "^0.4.x-dev@dev",
                 "chimera/routing-mezzio": "^0.4.x-dev@dev",
                 "chimera/serialization-jms": "^0.4.x-dev@dev",
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -200,7 +200,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T23:24:53+00:00"
+            "time": "2021-01-27T06:21:06+00:00"
         },
         {
             "name": "chimera/foundation",
@@ -402,19 +402,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/routing-mezzio.git",
-                "reference": "96c0ad5e4b652d741b3ca3ba90b641f6ea7ed0cb"
+                "reference": "ddcd42b97bc2f729a4a54ebafcd110b876cba054"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/routing-mezzio/zipball/96c0ad5e4b652d741b3ca3ba90b641f6ea7ed0cb",
-                "reference": "96c0ad5e4b652d741b3ca3ba90b641f6ea7ed0cb",
+                "url": "https://api.github.com/repos/chimeraphp/routing-mezzio/zipball/ddcd42b97bc2f729a4a54ebafcd110b876cba054",
+                "reference": "ddcd42b97bc2f729a4a54ebafcd110b876cba054",
                 "shasum": ""
             },
             "require": {
                 "chimera/foundation": "^0.4@dev",
                 "chimera/routing": "^0.4@dev",
                 "laminas/laminas-diactoros": "^2.5",
-                "mezzio/mezzio": "^3.2",
+                "mezzio/mezzio": "^3.3",
                 "mezzio/mezzio-fastroute": "^3.1",
                 "mezzio/mezzio-helpers": "^5.4",
                 "mezzio/mezzio-router": "^3.3",
@@ -428,7 +428,7 @@
                 "chimera/routing-expressive": "*"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -469,7 +469,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T21:43:36+00:00"
+            "time": "2021-01-27T17:17:17+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3508,16 +3508,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.2.1",
+            "version": "v5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "fa8f8cab6b65e2d99a118e082935344c5ba8c60d"
+                "reference": "262d033b57c73e8b59cd6e68a45c528318b15038"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/fa8f8cab6b65e2d99a118e082935344c5ba8c60d",
-                "reference": "fa8f8cab6b65e2d99a118e082935344c5ba8c60d",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/262d033b57c73e8b59cd6e68a45c528318b15038",
+                "reference": "262d033b57c73e8b59cd6e68a45c528318b15038",
                 "shasum": ""
             },
             "require": {
@@ -3547,7 +3547,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony Filesystem Component",
+            "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "funding": [
                 {
@@ -3563,7 +3563,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-30T17:05:38+00:00"
+            "time": "2021-01-27T10:01:46+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
