@@ -134,12 +134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/di-symfony.git",
-                "reference": "5c9b68040e64a31bedcb9cb63d0ec4354c1e16a3"
+                "reference": "d58158738d4357f2915ebc11ef204b89dc5e6291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/5c9b68040e64a31bedcb9cb63d0ec4354c1e16a3",
-                "reference": "5c9b68040e64a31bedcb9cb63d0ec4354c1e16a3",
+                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/d58158738d4357f2915ebc11ef204b89dc5e6291",
+                "reference": "d58158738d4357f2915ebc11ef204b89dc5e6291",
                 "shasum": ""
             },
             "require": {
@@ -153,7 +153,7 @@
                 "chimera/mapping": "^0.4.x-dev@dev",
                 "chimera/routing-mezzio": "^0.4.x-dev@dev",
                 "chimera/serialization-jms": "^0.4.x-dev@dev",
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -200,7 +200,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T23:24:53+00:00"
+            "time": "2021-01-27T06:21:06+00:00"
         },
         {
             "name": "chimera/foundation",
@@ -402,19 +402,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/routing-mezzio.git",
-                "reference": "96c0ad5e4b652d741b3ca3ba90b641f6ea7ed0cb"
+                "reference": "ddcd42b97bc2f729a4a54ebafcd110b876cba054"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/routing-mezzio/zipball/96c0ad5e4b652d741b3ca3ba90b641f6ea7ed0cb",
-                "reference": "96c0ad5e4b652d741b3ca3ba90b641f6ea7ed0cb",
+                "url": "https://api.github.com/repos/chimeraphp/routing-mezzio/zipball/ddcd42b97bc2f729a4a54ebafcd110b876cba054",
+                "reference": "ddcd42b97bc2f729a4a54ebafcd110b876cba054",
                 "shasum": ""
             },
             "require": {
                 "chimera/foundation": "^0.4@dev",
                 "chimera/routing": "^0.4@dev",
                 "laminas/laminas-diactoros": "^2.5",
-                "mezzio/mezzio": "^3.2",
+                "mezzio/mezzio": "^3.3",
                 "mezzio/mezzio-fastroute": "^3.1",
                 "mezzio/mezzio-helpers": "^5.4",
                 "mezzio/mezzio-router": "^3.3",
@@ -428,7 +428,7 @@
                 "chimera/routing-expressive": "*"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -469,7 +469,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T21:43:36+00:00"
+            "time": "2021-01-27T17:17:17+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3056,16 +3056,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v5.2.1",
+            "version": "v5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "5e61d63b1ef4fb4852994038267ad45e12f3ec52"
+                "reference": "d6aed6c1bbf6f59e521f46437475a0ff4878d388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/5e61d63b1ef4fb4852994038267ad45e12f3ec52",
-                "reference": "5e61d63b1ef4fb4852994038267ad45e12f3ec52",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/d6aed6c1bbf6f59e521f46437475a0ff4878d388",
+                "reference": "d6aed6c1bbf6f59e521f46437475a0ff4878d388",
                 "shasum": ""
             },
             "require": {
@@ -3124,7 +3124,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony Cache component with PSR-6, PSR-16, and tags",
+            "description": "Provides an extended PSR-6, PSR-16 (and tags) implementation",
             "homepage": "https://symfony.com",
             "keywords": [
                 "caching",
@@ -3144,7 +3144,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-10T19:16:15+00:00"
+            "time": "2021-01-27T11:24:50+00:00"
         },
         {
             "name": "symfony/cache-contracts",
@@ -3799,16 +3799,16 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v5.2.1",
+            "version": "v5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "fbc3507f23d263d75417e09a12d77c009f39676c"
+                "reference": "5aed4875ab514c8cb9b6ff4772baa25fa4c10307"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/fbc3507f23d263d75417e09a12d77c009f39676c",
-                "reference": "fbc3507f23d263d75417e09a12d77c009f39676c",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/5aed4875ab514c8cb9b6ff4772baa25fa4c10307",
+                "reference": "5aed4875ab514c8cb9b6ff4772baa25fa4c10307",
                 "shasum": ""
             },
             "require": {
@@ -3841,7 +3841,7 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "A blend of var_export() + serialize() to turn any serializable data structure to plain PHP code",
+            "description": "Allows exporting any serializable PHP data structure to plain PHP code",
             "homepage": "https://symfony.com",
             "keywords": [
                 "clone",
@@ -3865,7 +3865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-28T21:31:18+00:00"
+            "time": "2021-01-27T10:01:46+00:00"
         },
         {
             "name": "willdurand/negotiation",
