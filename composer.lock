@@ -134,12 +134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/di-symfony.git",
-                "reference": "21b5e9dfdb70e3391f7900c94bb94fa5f849c5ba"
+                "reference": "8af6870194b8eec2b5cf215a28773bf0c226b5bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/21b5e9dfdb70e3391f7900c94bb94fa5f849c5ba",
-                "reference": "21b5e9dfdb70e3391f7900c94bb94fa5f849c5ba",
+                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/8af6870194b8eec2b5cf215a28773bf0c226b5bd",
+                "reference": "8af6870194b8eec2b5cf215a28773bf0c226b5bd",
                 "shasum": ""
             },
             "require": {
@@ -200,7 +200,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-03T07:20:47+00:00"
+            "time": "2021-02-03T07:24:53+00:00"
         },
         {
             "name": "chimera/foundation",
@@ -2437,16 +2437,16 @@
         },
         {
             "name": "react/cache",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/cache.git",
-                "reference": "44a568925556b0bd8cacc7b49fb0f1cf0d706a0c"
+                "reference": "4bf736a2cccec7298bdf745db77585966fc2ca7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/cache/zipball/44a568925556b0bd8cacc7b49fb0f1cf0d706a0c",
-                "reference": "44a568925556b0bd8cacc7b49fb0f1cf0d706a0c",
+                "url": "https://api.github.com/repos/reactphp/cache/zipball/4bf736a2cccec7298bdf745db77585966fc2ca7e",
+                "reference": "4bf736a2cccec7298bdf745db77585966fc2ca7e",
                 "shasum": ""
             },
             "require": {
@@ -2505,7 +2505,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-18T12:12:35+00:00"
+            "time": "2021-02-02T06:47:52+00:00"
         },
         {
             "name": "react/dns",
