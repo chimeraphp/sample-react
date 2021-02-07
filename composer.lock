@@ -50,6 +50,10 @@
                 "brick",
                 "math"
             ],
+            "support": {
+                "issues": "https://github.com/brick/math/issues",
+                "source": "https://github.com/brick/math/tree/0.9.2"
+            },
             "funding": [
                 {
                     "url": "https://tidelift.com/funding/github/packagist/brick/math",
@@ -60,16 +64,16 @@
         },
         {
             "name": "chimera/bus-tactician",
-            "version": "dev-master",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/bus-tactician.git",
-                "reference": "e6c07083bdb21f29aa069b78e683afc5be15559e"
+                "reference": "a0b732c0d10dcfda4e97f24d6d0b8c9794333bac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/bus-tactician/zipball/e6c07083bdb21f29aa069b78e683afc5be15559e",
-                "reference": "e6c07083bdb21f29aa069b78e683afc5be15559e",
+                "url": "https://api.github.com/repos/chimeraphp/bus-tactician/zipball/a0b732c0d10dcfda4e97f24d6d0b8c9794333bac",
+                "reference": "a0b732c0d10dcfda4e97f24d6d0b8c9794333bac",
                 "shasum": ""
             },
             "require": {
@@ -82,7 +86,7 @@
                 "chimera/bus-implementation": "0.4.0"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -91,11 +95,9 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^9.5"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                },
                 "unused": [
                     "league/tactician-container"
                 ]
@@ -116,6 +118,10 @@
                 }
             ],
             "description": "Service bus adapter for league/tactician",
+            "support": {
+                "issues": "https://github.com/chimeraphp/bus-tactician/issues",
+                "source": "https://github.com/chimeraphp/bus-tactician/tree/0.4.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -126,20 +132,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T21:55:03+00:00"
+            "time": "2021-02-07T13:39:56+00:00"
         },
         {
             "name": "chimera/di-symfony",
-            "version": "dev-master",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/di-symfony.git",
-                "reference": "8af6870194b8eec2b5cf215a28773bf0c226b5bd"
+                "reference": "a28927bf4f5dbd475321a2caa82854689e01afe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/8af6870194b8eec2b5cf215a28773bf0c226b5bd",
-                "reference": "8af6870194b8eec2b5cf215a28773bf0c226b5bd",
+                "url": "https://api.github.com/repos/chimeraphp/di-symfony/zipball/a28927bf4f5dbd475321a2caa82854689e01afe7",
+                "reference": "a28927bf4f5dbd475321a2caa82854689e01afe7",
                 "shasum": ""
             },
             "require": {
@@ -168,12 +174,8 @@
                 "chimera/routing-mezzio": "To use mezzio/mezzio as routing application",
                 "chimera/serialization-jms": "To use jms/serializer to create messages and format content"
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Chimera\\DependencyInjection\\": "src"
@@ -190,6 +192,10 @@
                 }
             ],
             "description": "A set of compiler passes that connects all components together",
+            "support": {
+                "issues": "https://github.com/chimeraphp/di-symfony/issues",
+                "source": "https://github.com/chimeraphp/di-symfony/tree/0.4.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -200,20 +206,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-03T07:24:53+00:00"
+            "time": "2021-02-07T14:30:34+00:00"
         },
         {
             "name": "chimera/foundation",
-            "version": "dev-master",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/foundation.git",
-                "reference": "763c91f2c5b79c0f1b49fde077f8e16f1ba35ab3"
+                "reference": "987f9719dda281b53126b8abc8c5311d7c280589"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/foundation/zipball/763c91f2c5b79c0f1b49fde077f8e16f1ba35ab3",
-                "reference": "763c91f2c5b79c0f1b49fde077f8e16f1ba35ab3",
+                "url": "https://api.github.com/repos/chimeraphp/foundation/zipball/987f9719dda281b53126b8abc8c5311d7c280589",
+                "reference": "987f9719dda281b53126b8abc8c5311d7c280589",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +227,7 @@
                 "ramsey/uuid": "^4.1"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -230,12 +236,8 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^9.5"
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Chimera\\": "src"
@@ -252,6 +254,10 @@
                 }
             ],
             "description": "Base structure to connect PSR-7 objects to command and query buses",
+            "support": {
+                "issues": "https://github.com/chimeraphp/foundation/issues",
+                "source": "https://github.com/chimeraphp/foundation/tree/0.4.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -262,20 +268,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T21:09:04+00:00"
+            "time": "2021-02-07T13:24:52+00:00"
         },
         {
             "name": "chimera/mapping",
-            "version": "dev-master",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/mapping.git",
-                "reference": "62dace2583f2c914bb3508c1bef96ef2e6ef432d"
+                "reference": "407b2bb551eaa4167308a53861f990f7d5b3bb36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/mapping/zipball/62dace2583f2c914bb3508c1bef96ef2e6ef432d",
-                "reference": "62dace2583f2c914bb3508c1bef96ef2e6ef432d",
+                "url": "https://api.github.com/repos/chimeraphp/mapping/zipball/407b2bb551eaa4167308a53861f990f7d5b3bb36",
+                "reference": "407b2bb551eaa4167308a53861f990f7d5b3bb36",
                 "shasum": ""
             },
             "require": {
@@ -283,7 +289,7 @@
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12",
@@ -292,12 +298,8 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^9.5"
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Chimera\\Mapping\\": "src"
@@ -314,6 +316,10 @@
                 }
             ],
             "description": "Useful annotations to configure the application layer of your software",
+            "support": {
+                "issues": "https://github.com/chimeraphp/mapping/issues",
+                "source": "https://github.com/chimeraphp/mapping/tree/0.4.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -324,20 +330,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T22:01:39+00:00"
+            "time": "2021-02-07T14:01:00+00:00"
         },
         {
             "name": "chimera/routing",
-            "version": "dev-master",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/routing.git",
-                "reference": "574eef52a9e0bf1d086487611dd2615a94e1dbc9"
+                "reference": "c998d64f993c61eee1c9919c0cf39d08825cc813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/routing/zipball/574eef52a9e0bf1d086487611dd2615a94e1dbc9",
-                "reference": "574eef52a9e0bf1d086487611dd2615a94e1dbc9",
+                "url": "https://api.github.com/repos/chimeraphp/routing/zipball/c998d64f993c61eee1c9919c0cf39d08825cc813",
+                "reference": "c998d64f993c61eee1c9919c0cf39d08825cc813",
                 "shasum": ""
             },
             "require": {
@@ -352,7 +358,7 @@
                 "psr/http-server-middleware": "^1.0"
             },
             "require-dev": {
-                "infection/infection": "^0.20",
+                "infection/infection": "^0.21",
                 "laminas/laminas-diactoros": "^2.5",
                 "lcobucci/coding-standard": "^6.0",
                 "phpstan/extension-installer": "^1.1",
@@ -362,12 +368,8 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^9.5"
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Chimera\\Routing\\": "src"
@@ -384,6 +386,10 @@
                 }
             ],
             "description": "A collection of reusable PSR-15 components that connects Chimera to any framework",
+            "support": {
+                "issues": "https://github.com/chimeraphp/routing/issues",
+                "source": "https://github.com/chimeraphp/routing/tree/0.4.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -394,20 +400,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-01-06T21:24:00+00:00"
+            "time": "2021-02-07T13:33:26+00:00"
         },
         {
             "name": "chimera/routing-mezzio",
-            "version": "dev-master",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chimeraphp/routing-mezzio.git",
-                "reference": "95d90a548e737bf8017a62b18702f14b5d692af7"
+                "reference": "b7dc855376228bf6909e4ecc19860002b84fde32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chimeraphp/routing-mezzio/zipball/95d90a548e737bf8017a62b18702f14b5d692af7",
-                "reference": "95d90a548e737bf8017a62b18702f14b5d692af7",
+                "url": "https://api.github.com/repos/chimeraphp/routing-mezzio/zipball/b7dc855376228bf6909e4ecc19860002b84fde32",
+                "reference": "b7dc855376228bf6909e4ecc19860002b84fde32",
                 "shasum": ""
             },
             "require": {
@@ -437,12 +443,8 @@
                 "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^9.5"
             },
+            "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Chimera\\Routing\\Mezzio\\": "src"
@@ -459,6 +461,10 @@
                 }
             ],
             "description": "Laminas Mezzio implementation for chimera/routing",
+            "support": {
+                "issues": "https://github.com/chimeraphp/routing-mezzio/issues",
+                "source": "https://github.com/chimeraphp/routing-mezzio/tree/0.4.x"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -469,7 +475,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-02T15:01:08+00:00"
+            "time": "2021-02-07T14:22:35+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -540,6 +546,10 @@
                 "docblock",
                 "parser"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.11.1"
+            },
             "time": "2020-10-26T10:28:16+00:00"
         },
         {
@@ -602,6 +612,10 @@
                 "parser",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -659,6 +673,10 @@
                 "event-dispatcher",
                 "event-emitter"
             ],
+            "support": {
+                "issues": "https://github.com/igorw/evenement/issues",
+                "source": "https://github.com/igorw/evenement/tree/master"
+            },
             "time": "2017-07-23T21:35:13+00:00"
         },
         {
@@ -711,6 +729,10 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-message-util/issues",
+                "source": "https://github.com/php-fig/http-message-util/tree/1.1.5"
+            },
             "time": "2020-11-24T22:02:12+00:00"
         },
         {
@@ -797,6 +819,14 @@
                 "psr-17",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-diactoros/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-diactoros/issues",
+                "rss": "https://github.com/laminas/laminas-diactoros/releases.atom",
+                "source": "https://github.com/laminas/laminas-diactoros"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -852,6 +882,14 @@
                 "escaper",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -913,6 +951,14 @@
                 "psr-15",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-httphandlerrunner/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-httphandlerrunner/issues",
+                "rss": "https://github.com/laminas/laminas-httphandlerrunner/releases.atom",
+                "source": "https://github.com/laminas/laminas-httphandlerrunner"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -963,6 +1009,14 @@
                 "laminas",
                 "stdlib"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-stdlib/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-stdlib/issues",
+                "rss": "https://github.com/laminas/laminas-stdlib/releases.atom",
+                "source": "https://github.com/laminas/laminas-stdlib"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1039,6 +1093,14 @@
                 "psr-15",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-stratigility/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-stratigility/issues",
+                "rss": "https://github.com/laminas/laminas-stratigility/releases.atom",
+                "source": "https://github.com/laminas/laminas-stratigility"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1093,6 +1155,12 @@
                 "laminas",
                 "zf"
             ],
+            "support": {
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
+                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
+                "source": "https://github.com/laminas/laminas-zendframework-bridge"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1167,6 +1235,10 @@
                 }
             ],
             "description": "A PSR-15 middleware to handle content negotiation",
+            "support": {
+                "issues": "https://github.com/lcobucci/content-negotiation-middleware/issues",
+                "source": "https://github.com/lcobucci/content-negotiation-middleware/tree/3.0.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -1237,6 +1309,10 @@
             "keywords": [
                 "dependency-injection"
             ],
+            "support": {
+                "issues": "https://github.com/lcobucci/di-builder/issues",
+                "source": "https://github.com/lcobucci/di-builder/tree/7.0.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/lcobucci",
@@ -1298,6 +1374,10 @@
                 "command bus",
                 "service layer"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/tactician/issues",
+                "source": "https://github.com/thephpleague/tactician/tree/master"
+            },
             "time": "2017-11-30T09:17:20+00:00"
         },
         {
@@ -1349,6 +1429,10 @@
                 "league",
                 "tactician"
             ],
+            "support": {
+                "issues": "https://github.com/thephpleague/tactician-container/issues",
+                "source": "https://github.com/thephpleague/tactician-container/tree/master"
+            },
             "time": "2017-04-13T06:27:12+00:00"
         },
         {
@@ -1444,6 +1528,14 @@
                 "psr-15",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.mezzio.dev/mezzio/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/mezzio/mezzio/issues",
+                "rss": "https://github.com/mezzio/mezzio/releases.atom",
+                "source": "https://github.com/mezzio/mezzio"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1516,6 +1608,14 @@
                 "psr",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.mezzio.dev/mezzio/features/router/fast-route/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/mezzio/mezzio-fastroute/issues",
+                "rss": "https://github.com/mezzio/mezzio-fastroute/releases.atom",
+                "source": "https://github.com/mezzio/mezzio-fastroute"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1582,6 +1682,14 @@
                 "psr",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.mezzio.dev/mezzio/features/helpers/intro/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/mezzio/mezzio-helpers/issues",
+                "rss": "https://github.com/mezzio/mezzio-helpers/releases.atom",
+                "source": "https://github.com/mezzio/mezzio-helpers"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1654,6 +1762,14 @@
                 "psr",
                 "psr-7"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.mezzio.dev/mezzio/features/router/intro/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/mezzio/mezzio-router/issues",
+                "rss": "https://github.com/mezzio/mezzio-router/releases.atom",
+                "source": "https://github.com/mezzio/mezzio-router"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1710,6 +1826,14 @@
                 "mezzio",
                 "template"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.mezzio.dev/mezzio/features/template/intro/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/mezzio/mezzio-template/issues",
+                "rss": "https://github.com/mezzio/mezzio-template/releases.atom",
+                "source": "https://github.com/mezzio/mezzio-template"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -1769,6 +1893,10 @@
                 "psr-7",
                 "server"
             ],
+            "support": {
+                "issues": "https://github.com/middlewares/negotiation/issues",
+                "source": "https://github.com/middlewares/negotiation/tree/v2.0.2"
+            },
             "time": "2020-12-02T00:06:29+00:00"
         },
         {
@@ -1819,6 +1947,10 @@
                 "server",
                 "time"
             ],
+            "support": {
+                "issues": "https://github.com/middlewares/response-time/issues",
+                "source": "https://github.com/middlewares/response-time/tree/v2.0.1"
+            },
             "time": "2020-12-03T01:14:02+00:00"
         },
         {
@@ -1877,6 +2009,10 @@
                 "psr-17",
                 "psr-7"
             ],
+            "support": {
+                "issues": "https://github.com/middlewares/utils/issues",
+                "source": "https://github.com/middlewares/utils/tree/v3.2.0"
+            },
             "time": "2020-11-30T20:07:15+00:00"
         },
         {
@@ -1923,6 +2059,10 @@
                 "router",
                 "routing"
             ],
+            "support": {
+                "issues": "https://github.com/nikic/FastRoute/issues",
+                "source": "https://github.com/nikic/FastRoute/tree/master"
+            },
             "time": "2018-02-13T20:26:39+00:00"
         },
         {
@@ -1969,6 +2109,9 @@
                 "psr",
                 "psr-6"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
@@ -2018,6 +2161,10 @@
                 "container-interop",
                 "psr"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/master"
+            },
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
@@ -2070,6 +2217,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
             "time": "2019-04-30T12:38:16+00:00"
         },
         {
@@ -2120,6 +2270,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -2173,6 +2326,10 @@
                 "response",
                 "server"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-server-handler/issues",
+                "source": "https://github.com/php-fig/http-server-handler/tree/master"
+            },
             "time": "2018-10-30T16:46:14+00:00"
         },
         {
@@ -2226,6 +2383,10 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-server-middleware/issues",
+                "source": "https://github.com/php-fig/http-server-middleware/tree/master"
+            },
             "time": "2018-10-30T17:12:04+00:00"
         },
         {
@@ -2273,6 +2434,9 @@
                 "psr",
                 "psr-3"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.3"
+            },
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
@@ -2336,6 +2500,10 @@
                 "queue",
                 "set"
             ],
+            "support": {
+                "issues": "https://github.com/ramsey/collection/issues",
+                "source": "https://github.com/ramsey/collection/tree/1.1.3"
+            },
             "funding": [
                 {
                     "url": "https://github.com/ramsey",
@@ -2427,6 +2595,11 @@
                 "identifier",
                 "uuid"
             ],
+            "support": {
+                "issues": "https://github.com/ramsey/uuid/issues",
+                "rss": "https://github.com/ramsey/uuid/releases.atom",
+                "source": "https://github.com/ramsey/uuid"
+            },
             "funding": [
                 {
                     "url": "https://github.com/ramsey",
@@ -2495,6 +2668,10 @@
                 "promise",
                 "reactphp"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/cache/issues",
+                "source": "https://github.com/reactphp/cache/tree/v1.1.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/WyriHaximus",
@@ -2571,6 +2748,10 @@
                 "dns-resolver",
                 "reactphp"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/dns/issues",
+                "source": "https://github.com/reactphp/dns/tree/v1.4.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/WyriHaximus",
@@ -2623,6 +2804,10 @@
                 "asynchronous",
                 "event-loop"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/event-loop/issues",
+                "source": "https://github.com/reactphp/event-loop/tree/v1.1.1"
+            },
             "time": "2020-01-01T18:39:52+00:00"
         },
         {
@@ -2703,6 +2888,10 @@
                 "server",
                 "streaming"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/http/issues",
+                "source": "https://github.com/reactphp/http/tree/v1.2.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/WyriHaximus",
@@ -2759,6 +2948,10 @@
                 "promise",
                 "promises"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/promise/issues",
+                "source": "https://github.com/reactphp/promise/tree/v2.8.0"
+            },
             "time": "2020-05-12T15:16:56+00:00"
         },
         {
@@ -2815,6 +3008,10 @@
                 "stream",
                 "unwrap"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/promise-stream/issues",
+                "source": "https://github.com/reactphp/promise-stream/tree/v1.2.0"
+            },
             "time": "2019-07-03T12:29:10+00:00"
         },
         {
@@ -2868,6 +3065,10 @@
                 "timeout",
                 "timer"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/promise-timer/issues",
+                "source": "https://github.com/reactphp/promise-timer/tree/v1.6.0"
+            },
             "time": "2020-07-10T12:18:06+00:00"
         },
         {
@@ -2938,6 +3139,10 @@
                 "reactphp",
                 "stream"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/socket/issues",
+                "source": "https://github.com/reactphp/socket/tree/v1.6.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/WyriHaximus",
@@ -2994,6 +3199,10 @@
                 "stream",
                 "writable"
             ],
+            "support": {
+                "issues": "https://github.com/reactphp/stream/issues",
+                "source": "https://github.com/reactphp/stream/tree/v1.1.1"
+            },
             "time": "2020-05-04T10:17:57+00:00"
         },
         {
@@ -3052,6 +3261,9 @@
                 "stream",
                 "uri"
             ],
+            "support": {
+                "source": "https://github.com/ringcentral/psr7/tree/master"
+            },
             "time": "2018-05-29T20:21:04+00:00"
         },
         {
@@ -3130,6 +3342,9 @@
                 "caching",
                 "psr6"
             ],
+            "support": {
+                "source": "https://github.com/symfony/cache/tree/v5.2.3"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3206,6 +3421,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/cache-contracts/tree/v2.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3281,6 +3499,9 @@
             ],
             "description": "Helps you find, load, combine, autofill and validate configuration values of any kind",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/config/tree/v5.2.3"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3365,6 +3586,9 @@
             ],
             "description": "Allows you to standardize and centralize the way objects are constructed in your application",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dependency-injection/tree/v5.2.3"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3429,6 +3653,9 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3490,6 +3717,9 @@
             ],
             "description": "Provides an engine that can compile and evaluate expressions",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/expression-language/tree/v5.2.3"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3549,6 +3779,9 @@
             ],
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v5.2.3"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3625,6 +3858,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3705,6 +3941,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3781,6 +4020,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3851,6 +4093,9 @@
                 "instantiate",
                 "serialize"
             ],
+            "support": {
+                "source": "https://github.com/symfony/var-exporter/tree/v5.2.3"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3917,6 +4162,10 @@
                 "header",
                 "negotiation"
             ],
+            "support": {
+                "issues": "https://github.com/willdurand/Negotiation/issues",
+                "source": "https://github.com/willdurand/Negotiation/tree/3.0.0"
+            },
             "time": "2020-09-25T08:01:41+00:00"
         },
         {
@@ -3962,6 +4211,10 @@
                 }
             ],
             "description": "PSR-3 logger utilities",
+            "support": {
+                "issues": "https://github.com/WyriHaximus/php-psr-3-utilities/issues",
+                "source": "https://github.com/WyriHaximus/php-psr-3-utilities/tree/master"
+            },
             "time": "2018-12-16T16:39:37+00:00"
         },
         {
@@ -4009,6 +4262,10 @@
                 }
             ],
             "description": "Async PSR-3 stdio logger",
+            "support": {
+                "issues": "https://github.com/WyriHaximus/reactphp-psr-3-stdio/issues",
+                "source": "https://github.com/WyriHaximus/reactphp-psr-3-stdio/tree/master"
+            },
             "time": "2018-01-11T08:53:19+00:00"
         }
     ],
@@ -4322,6 +4579,10 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
+            "support": {
+                "issues": "https://github.com/Roave/SecurityAdvisories/issues",
+                "source": "https://github.com/Roave/SecurityAdvisories/tree/latest"
+            },
             "funding": [
                 {
                     "url": "https://github.com/Ocramius",
@@ -4353,5 +4614,5 @@
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
