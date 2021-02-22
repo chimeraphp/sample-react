@@ -8,7 +8,6 @@ use Lcobucci\MyApi\Books;
 
 /**
  * @Chimera\Routing\FetchEndpoint(path="/books", query=FindBooks::class, name="book.find")
- * @Chimera\ServiceBus\QueryHandler(handles=FindBooks::class)
  */
 final class FindBooksHandler
 {
@@ -19,6 +18,7 @@ final class FindBooksHandler
         $this->books = $books;
     }
 
+    /** @Chimera\ServiceBus\QueryHandler */
     public function handle(FindBooks $query): array
     {
         return $this->books->findAll($query->title, $query->author);

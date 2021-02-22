@@ -9,7 +9,6 @@ use Lcobucci\MyApi\Books;
 
 /**
  * @Chimera\Routing\FetchEndpoint(path="/books/{id}", query=FetchBook::class, name="book.fetch_one")
- * @Chimera\ServiceBus\QueryHandler(handles=FetchBook::class)
  */
 final class FetchBookHandler
 {
@@ -20,6 +19,7 @@ final class FetchBookHandler
         $this->books = $books;
     }
 
+    /** @Chimera\ServiceBus\QueryHandler */
     public function handle(FetchBook $query): Book
     {
         return $this->books->find($query->id);

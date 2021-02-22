@@ -14,7 +14,6 @@ use Lcobucci\MyApi\Books;
  *     name="book.create",
  *     redirectTo="book.fetch_one"
  * )
- * @Chimera\ServiceBus\CommandHandler(handles=AddToCollection::class)
  */
 final class AddToCollectionHandler
 {
@@ -25,6 +24,7 @@ final class AddToCollectionHandler
         $this->collection = $collection;
     }
 
+    /** @Chimera\ServiceBus\CommandHandler */
     public function handle(AddToCollection $command): void
     {
         $book = new Book(
