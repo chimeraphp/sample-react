@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4adb585ccfeca27881bce8e5b1d230bc",
+    "content-hash": "01a6fd0297cb0abe2064a3c16a6bc2d8",
     "packages": [
         {
             "name": "brick/math",
@@ -1317,6 +1317,78 @@
                 }
             ],
             "time": "2020-10-01T19:34:31+00:00"
+        },
+        {
+            "name": "lcobucci/error-handling-middleware",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/error-handling-middleware.git",
+                "reference": "1658966bab546586f8344d7c5ed70b91e853a444"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/error-handling-middleware/zipball/1658966bab546586f8344d7c5ed70b91e853a444",
+                "reference": "1658966bab546586f8344d7c5ed70b91e853a444",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "fig/http-message-util": "^1.1",
+                "lcobucci/content-negotiation-middleware": "^3.0",
+                "php": "^7.4 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "infection/infection": "^0.21",
+                "laminas/laminas-diactoros": "^2.5",
+                "lcobucci/coding-standard": "^6.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\ErrorHandling\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com"
+                }
+            ],
+            "description": "A PSR-15 middleware compatible with RFC 7807",
+            "keywords": [
+                "RFC-7807",
+                "error handling",
+                "psr-15"
+            ],
+            "support": {
+                "issues": "https://github.com/lcobucci/error-handling-middleware/issues",
+                "source": "https://github.com/lcobucci/error-handling-middleware/tree/1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-02-22T21:04:27+00:00"
         },
         {
             "name": "league/tactician",
