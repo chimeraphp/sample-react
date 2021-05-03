@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "base_uri",
-			"value": "http://localhost",
+			"value": "http://app",
 			"description": "",
 			"enabled": true
 		},
