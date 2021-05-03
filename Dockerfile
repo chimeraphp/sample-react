@@ -45,4 +45,6 @@ FROM base
 
 COPY --from=build /opt/chimera/sample-react/ /opt/chimera/sample-react/
 
+EXPOSE 80
+
 CMD ["php", "public/index.php"]

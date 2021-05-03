@@ -1,0 +1,14 @@
+services:
+  app:
+    image: chimera-sample
+    build:
+      context: .
+
+  tests:
+    image: postman/newman_alpine33:5.2.0
+    command: run -e /app/environment.json /app/collection.json
+    depends_on:
+      - app
+    volumes:
+    - ./tests/environment.json:/app/environment.json
+    - ./tests/collection.json:/app/collection.json
