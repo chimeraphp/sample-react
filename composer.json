@@ -8,17 +8,18 @@
     },
     "prefer-stable": true,
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "ext-json": "*",
-        "chimera/bus-tactician": "^0.4",
-        "chimera/di-symfony": "^0.4",
-        "chimera/mapping": "^0.4",
-        "chimera/routing-mezzio": "^0.4",
-        "lcobucci/di-builder": "^7.0",
-        "lcobucci/error-handling-middleware": "^1.2",
+        "chimera/bus-tactician": "^0.5.x-dev",
+        "chimera/di-symfony": "^0.5.x-dev",
+        "chimera/foundation": "^0.5.x-dev",
+        "chimera/mapping": "^0.5.x-dev",
+        "chimera/routing": "^0.5.x-dev",
+        "chimera/routing-mezzio": "^0.5.x-dev",
+        "lcobucci/di-builder": "^7.1",
+        "lcobucci/error-handling-middleware": "^1.3",
         "middlewares/response-time": "^2.0",
-        "react/http": "^1.2",
-        "wyrihaximus/react-psr-3-stdio": "^2.1"
+        "react/http": "^1.5"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
