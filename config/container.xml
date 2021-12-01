@@ -6,7 +6,6 @@
         <import resource="container/app.xml" />
         <import resource="container/parameters.xml" />
         <import resource="container/event_loop.xml" />
-        <import resource="container/logger.xml" />
         <import resource="container/http_middleware.xml" />
         <import resource="parameters.xml" ignore-errors="true" />
     </imports>

@@ -5,25 +5,36 @@ namespace Lcobucci\MyApi;
 
 use Chimera\Routing\Application;
 use Psr\Container\ContainerInterface;
-use Psr\Log\LoggerInterface;
+use Psr\Log\AbstractLogger;
 use React\EventLoop\LoopInterface;
 use React\Http\Server;
 use React\Socket\Server as SocketServer;
+use React\Stream\WritableResourceStream;
+use React\Stream\WritableStreamInterface;
 use Throwable;
 
 use function assert;
+use function sprintf;
 
 use const PHP_EOL;
 use const SIGINT;
+use const STDOUT;
 
 $container = require __DIR__ . '/../config/container.php';
 assert($container instanceof ContainerInterface);
 
-$app = $container->get('my-api.http');
+$app = $container->get(Application::class);
 assert($app instanceof Application);
 
 $loop   = $container->get(LoopInterface::class);
-$logger = $container->get(LoggerInterface::class);
+$logger = new class (new WritableResourceStream(STDOUT, $loop)) extends AbstractLogger {
+    public function __construct(private WritableStreamInterface $stream) {}
+
+    public function log($level, $message, array $context = array()): void
+    {
+        $this->stream->write(sprintf('[%s] %s', $level, $message));
+    }
+};
 
 $server = new Server($loop, [$app, 'handle']);
 
