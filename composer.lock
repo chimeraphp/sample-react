@@ -1811,24 +1811,23 @@
         },
         {
             "name": "mezzio/mezzio-template",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-template.git",
-                "reference": "82aa87190b2d20cfdd4fec1e8068833df07ca27e"
+                "reference": "92ccf133fbe2b2f93c3e1f16de746ba96b52d67e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-template/zipball/82aa87190b2d20cfdd4fec1e8068833df07ca27e",
-                "reference": "82aa87190b2d20cfdd4fec1e8068833df07ca27e",
+                "url": "https://api.github.com/repos/mezzio/mezzio-template/zipball/92ccf133fbe2b2f93c3e1f16de746ba96b52d67e",
+                "reference": "92ccf133fbe2b2f93c3e1f16de746ba96b52d67e",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-zendframework-bridge": "^1.0",
                 "php": "^7.3 || ~8.0.0 || ~8.1.0"
             },
-            "replace": {
-                "zendframework/zend-expressive-template": "^2.0.1"
+            "conflict": {
+                "zendframework/zend-expressive-template": "*"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.2.0",
@@ -1872,7 +1871,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-10-11T12:45:14+00:00"
+            "time": "2021-12-03T09:40:16+00:00"
         },
         {
             "name": "middlewares/negotiation",
