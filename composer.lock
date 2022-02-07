@@ -1389,16 +1389,16 @@
         },
         {
             "name": "mezzio/mezzio",
-            "version": "3.9.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio.git",
-                "reference": "6edd10feec4939a4e54b8be48de79086fcd46b51"
+                "reference": "7da0c2e454cb55ccded99bb9699db478486fed5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/6edd10feec4939a4e54b8be48de79086fcd46b51",
-                "reference": "6edd10feec4939a4e54b8be48de79086fcd46b51",
+                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/7da0c2e454cb55ccded99bb9699db478486fed5f",
+                "reference": "7da0c2e454cb55ccded99bb9699db478486fed5f",
                 "shasum": ""
             },
             "require": {
@@ -1429,7 +1429,7 @@
                 "laminas/laminas-diactoros": "^2.8.0",
                 "laminas/laminas-servicemanager": "^3.10",
                 "malukenho/docheader": "^0.1.8",
-                "mezzio/mezzio-aurarouter": "^3.1.0",
+                "mezzio/mezzio-aurarouter": "^3.3.0",
                 "mezzio/mezzio-fastroute": "^3.3.0",
                 "mezzio/mezzio-laminasrouter": "^3.1.0",
                 "mockery/mockery": "^1.4.4",
@@ -1494,7 +1494,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-01-05T11:04:06+00:00"
+            "time": "2022-02-05T17:44:06+00:00"
         },
         {
             "name": "mezzio/mezzio-fastroute",
