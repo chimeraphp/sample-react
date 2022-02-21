@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be4dbaa6f2b450d1eef0827dd5307a11",
+    "content-hash": "2a9a38cae51595b4f9b25cc9661a0011",
     "packages": [
         {
             "name": "brick/math",
@@ -1260,16 +1260,16 @@
         },
         {
             "name": "lcobucci/error-handling-middleware",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/error-handling-middleware.git",
-                "reference": "9ea48427bca8088cc066ac61dd91071573b0fe67"
+                "reference": "cfc986addbedd25c8ee3d9b620f2c0f15e521052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/error-handling-middleware/zipball/9ea48427bca8088cc066ac61dd91071573b0fe67",
-                "reference": "9ea48427bca8088cc066ac61dd91071573b0fe67",
+                "url": "https://api.github.com/repos/lcobucci/error-handling-middleware/zipball/cfc986addbedd25c8ee3d9b620f2c0f15e521052",
+                "reference": "cfc986addbedd25c8ee3d9b620f2c0f15e521052",
                 "shasum": ""
             },
             "require": {
@@ -1281,17 +1281,17 @@
                 "psr/http-message": "^1.0",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0",
-                "psr/log": "^2.0"
+                "psr/log": "^3.0"
             },
             "require-dev": {
-                "infection/infection": "^0.25",
+                "infection/infection": "^0.26",
                 "laminas/laminas-diactoros": "^2.8",
                 "lcobucci/coding-standard": "^8.0",
                 "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.1",
                 "phpunit/phpunit": "^9.5"
             },
             "type": "library",
@@ -1318,7 +1318,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lcobucci/error-handling-middleware/issues",
-                "source": "https://github.com/lcobucci/error-handling-middleware/tree/1.3.0"
+                "source": "https://github.com/lcobucci/error-handling-middleware/tree/1.4.0"
             },
             "funding": [
                 {
@@ -1330,7 +1330,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-10-31T22:27:10+00:00"
+            "time": "2022-02-20T20:36:22+00:00"
         },
         {
             "name": "league/tactician",
@@ -2344,16 +2344,16 @@
         },
         {
             "name": "psr/log",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376"
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/ef29f6d262798707a9edd554e2b82517ef3a9376",
-                "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
                 "shasum": ""
             },
             "require": {
@@ -2362,7 +2362,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "3.x-dev"
                 }
             },
             "autoload": {
@@ -2388,9 +2388,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/2.0.0"
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
-            "time": "2021-07-14T16:41:46+00:00"
+            "time": "2021-07-14T16:46:02+00:00"
         },
         {
             "name": "ramsey/collection",
