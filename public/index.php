@@ -5,6 +5,8 @@ namespace Lcobucci\MyApi;
 
 use Chimera\Routing\Application;
 use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\AbstractLogger;
 use React\EventLoop\Loop;
 use React\Http\HttpServer;
@@ -13,6 +15,7 @@ use React\Stream\WritableResourceStream;
 use React\Stream\WritableStreamInterface;
 use Throwable;
 
+use function React\Async\async;
 use function assert;
 use function sprintf;
 
@@ -35,7 +38,13 @@ $logger = new class (new WritableResourceStream(STDOUT)) extends AbstractLogger 
     }
 };
 
-$server = new HttpServer($app->handle(...));
+$server = new HttpServer(
+    async(
+        static function (ServerRequestInterface $request) use ($app): ResponseInterface {
+            return $app->handle($request);
+        }
+    )
+);
 
 $server->on(
     'error',
