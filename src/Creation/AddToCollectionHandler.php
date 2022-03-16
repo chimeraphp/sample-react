@@ -17,11 +17,8 @@ use Lcobucci\MyApi\Books;
  */
 final class AddToCollectionHandler
 {
-    private Books $collection;
-
-    public function __construct(Books $collection)
+    public function __construct(private readonly Books $collection)
     {
-        $this->collection = $collection;
     }
 
     /** @Chimera\ServiceBus\CommandHandler */

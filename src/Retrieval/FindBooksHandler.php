@@ -11,11 +11,8 @@ use Lcobucci\MyApi\Books;
  */
 final class FindBooksHandler
 {
-    private Books $books;
-
-    public function __construct(Books $books)
+    public function __construct(private readonly Books $books)
     {
-        $this->books = $books;
     }
 
     /** @Chimera\ServiceBus\QueryHandler */
