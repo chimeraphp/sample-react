@@ -9,15 +9,11 @@ use Ramsey\Uuid\UuidInterface;
 
 final class AddToCollection
 {
-    public UuidInterface $id;
-    public string $title;
-    public string $author;
-
-    private function __construct(UuidInterface $id, string $title, string $author)
-    {
-        $this->id     = $id;
-        $this->title  = $title;
-        $this->author = $author;
+    private function __construct(
+        public readonly UuidInterface $id,
+        public readonly string $title,
+        public readonly string $author,
+    ) {
     }
 
     public static function fromInput(Input $input): self

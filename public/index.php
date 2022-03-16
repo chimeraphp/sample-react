@@ -5,14 +5,17 @@ namespace Lcobucci\MyApi;
 
 use Chimera\Routing\Application;
 use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\AbstractLogger;
-use React\EventLoop\LoopInterface;
-use React\Http\Server;
-use React\Socket\Server as SocketServer;
+use React\EventLoop\Loop;
+use React\Http\HttpServer;
+use React\Socket\SocketServer;
 use React\Stream\WritableResourceStream;
 use React\Stream\WritableStreamInterface;
 use Throwable;
 
+use function React\Async\async;
 use function assert;
 use function sprintf;
 
@@ -26,9 +29,8 @@ assert($container instanceof ContainerInterface);
 $app = $container->get(Application::class);
 assert($app instanceof Application);
 
-$loop   = $container->get(LoopInterface::class);
-$logger = new class (new WritableResourceStream(STDOUT, $loop)) extends AbstractLogger {
-    public function __construct(private WritableStreamInterface $stream) {}
+$logger = new class (new WritableResourceStream(STDOUT)) extends AbstractLogger {
+    public function __construct(private readonly WritableStreamInterface $stream) {}
 
     public function log($level, $message, array $context = array()): void
     {
@@ -36,7 +38,13 @@ $logger = new class (new WritableResourceStream(STDOUT, $loop)) extends Abstract
     }
 };
 
-$server = new Server($loop, [$app, 'handle']);
+$server = new HttpServer(
+    async(
+        static function (ServerRequestInterface $request) use ($app): ResponseInterface {
+            return $app->handle($request);
+        }
+    )
+);
 
 $server->on(
     'error',
@@ -46,17 +54,25 @@ $server->on(
     }
 );
 
-$socket = new SocketServer('tcp://0.0.0.0:80', $loop);
+$socket = new SocketServer('tcp://0.0.0.0:80');
 $server->listen($socket);
 
 $logger->info('Listening on http://0.0.0.0:80' . PHP_EOL);
 $logger->info('Press Ctrl-C to quit.' . PHP_EOL);
 
-$loop->addSignal(SIGINT, $handler = static function () use ($logger, $socket, $loop, &$handler): void {
+$loop = Loop::get();
+
+$handler = static function () use ($logger, $socket, $loop, $server, &$handler): void {
     $logger->info('Shutting down server' . PHP_EOL);
 
+    $server->removeAllListeners();
     $socket->close();
+
     $loop->removeSignal(SIGINT, $handler);
-});
+    $loop->removeSignal(SIGTERM, $handler);
+};
+
+$loop->addSignal(SIGINT, $handler);
+$loop->addSignal(SIGTERM, $handler);
 
 $loop->run();

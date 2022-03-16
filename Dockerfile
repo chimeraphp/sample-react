@@ -1,10 +1,13 @@
-FROM php:8.0-alpine as base
+FROM php:8.1-alpine as base
 
 ENV APPLICATION_MODE=prod
 WORKDIR /opt/chimera/sample-react
 
 RUN apk add --no-cache git \
-    && apk add --no-cache --virtual .build $PHPIZE_DEPS \
+    && apk add --no-cache libev \
+    && apk add --no-cache --virtual .build libev-dev $PHPIZE_DEPS \
+    && pecl install ev-beta \
+    && docker-php-ext-enable ev \
     && docker-php-ext-install pcntl opcache \
     && rm -f "/usr/src/php.tar.xz" "/usr/src/php.tar.xz.asc" \
     && docker-php-source delete \

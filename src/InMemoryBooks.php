@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Lcobucci\MyApi;
 
-use OutOfBoundsException;
 use Ramsey\Uuid\UuidInterface;
 use function array_filter;
 use function array_values;

@@ -10,11 +10,8 @@ use Ramsey\Uuid\UuidInterface;
 
 final class FetchBook implements Query
 {
-    public UuidInterface $id;
-
-    private function __construct(UuidInterface $id)
+    private function __construct(public readonly UuidInterface $id)
     {
-        $this->id = $id;
     }
 
     public static function fromInput(Input $input): self
@@ -24,6 +21,6 @@ final class FetchBook implements Query
 
     public function conversionCallback(): callable
     {
-        return [BookDto::class, 'fromEntity'];
+        return BookDto::fromEntity(...);
     }
 }
