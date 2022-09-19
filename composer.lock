@@ -1574,16 +1574,16 @@
         },
         {
             "name": "mezzio/mezzio-helpers",
-            "version": "5.8.0",
+            "version": "5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-helpers.git",
-                "reference": "6e231cd6ad09eae7c2d9bac71441b496159dba28"
+                "reference": "b460d1d9ded9af5b9e257005afe2da1c4323ea13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-helpers/zipball/6e231cd6ad09eae7c2d9bac71441b496159dba28",
-                "reference": "6e231cd6ad09eae7c2d9bac71441b496159dba28",
+                "url": "https://api.github.com/repos/mezzio/mezzio-helpers/zipball/b460d1d9ded9af5b9e257005afe2da1c4323ea13",
+                "reference": "b460d1d9ded9af5b9e257005afe2da1c4323ea13",
                 "shasum": ""
             },
             "require": {
@@ -1598,8 +1598,8 @@
             },
             "require-dev": {
                 "ext-json": "*",
-                "laminas/laminas-coding-standard": "~2.3.0",
-                "laminas/laminas-diactoros": "^2.5.0",
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-diactoros": "^2.11.1",
                 "mockery/mockery": "^1.4.2",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.5.11",
@@ -1648,7 +1648,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-01-06T16:10:11+00:00"
+            "time": "2022-09-14T07:33:03+00:00"
         },
         {
             "name": "mezzio/mezzio-router",
