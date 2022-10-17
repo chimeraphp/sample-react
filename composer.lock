@@ -1652,21 +1652,21 @@
         },
         {
             "name": "mezzio/mezzio-router",
-            "version": "3.8.0",
+            "version": "3.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-router.git",
-                "reference": "27075d3e9b407791abf7ba5e62954a59be4b18df"
+                "reference": "5b03ab8ef9ae8323a9093d5b9d79a69a3733968f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/27075d3e9b407791abf7ba5e62954a59be4b18df",
-                "reference": "27075d3e9b407791abf7ba5e62954a59be4b18df",
+                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/5b03ab8ef9ae8323a9093d5b9d79a69a3733968f",
+                "reference": "5b03ab8ef9ae8323a9093d5b9d79a69a3733968f",
                 "shasum": ""
             },
             "require": {
                 "fig/http-message-util": "^1.1.2",
-                "php": "^7.4 || ~8.0.0 || ~8.1.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
                 "psr/container": "^1.0 || ^2.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0.1",
@@ -1678,14 +1678,12 @@
                 "zendframework/zend-expressive-router": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.3.0",
-                "laminas/laminas-diactoros": "^2.6",
-                "laminas/laminas-stratigility": "^3.4",
-                "phpspec/prophecy": "^1.9",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.5.11",
-                "psalm/plugin-phpunit": "^0.15.0",
-                "vimeo/psalm": "^4.17"
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-diactoros": "^2.18",
+                "laminas/laminas-stratigility": "^3.8",
+                "phpunit/phpunit": "^9.5.25",
+                "psalm/plugin-phpunit": "^0.17.0",
+                "vimeo/psalm": "^4.28"
             },
             "suggest": {
                 "mezzio/mezzio-aurarouter": "^3.0 to use the Aura.Router routing adapter",
@@ -1731,7 +1729,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-01-06T16:27:49+00:00"
+            "time": "2022-10-10T19:40:00+00:00"
         },
         {
             "name": "mezzio/mezzio-template",
