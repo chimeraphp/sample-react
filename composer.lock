@@ -1385,16 +1385,16 @@
         },
         {
             "name": "mezzio/mezzio",
-            "version": "3.11.0",
+            "version": "3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio.git",
-                "reference": "d5bf81f0caee6cf4b682a4bf1f8d693288bf217d"
+                "reference": "a9d6f7d6e45c37180059e5a4731a225ceb80cef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/d5bf81f0caee6cf4b682a4bf1f8d693288bf217d",
-                "reference": "d5bf81f0caee6cf4b682a4bf1f8d693288bf217d",
+                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/a9d6f7d6e45c37180059e5a4731a225ceb80cef1",
+                "reference": "a9d6f7d6e45c37180059e5a4731a225ceb80cef1",
                 "shasum": ""
             },
             "require": {
@@ -1403,7 +1403,7 @@
                 "laminas/laminas-stratigility": "^3.5",
                 "mezzio/mezzio-router": "^3.7",
                 "mezzio/mezzio-template": "^2.2",
-                "php": "~7.4.0||~8.0.0||~8.1.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
                 "psr/container": "^1.0||^2.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0.1",
@@ -1420,18 +1420,17 @@
                 "zendframework/zend-expressive": "*"
             },
             "require-dev": {
-                "filp/whoops": "^2.14.4",
-                "laminas/laminas-coding-standard": "~2.3.0",
-                "laminas/laminas-diactoros": "^2.11.2",
-                "laminas/laminas-servicemanager": "^3.10",
-                "malukenho/docheader": "^0.1.8",
-                "mezzio/mezzio-aurarouter": "^3.3.0",
-                "mezzio/mezzio-fastroute": "^3.3.0",
-                "mezzio/mezzio-laminasrouter": "^3.1.0",
-                "mockery/mockery": "^1.4.4",
-                "phpunit/phpunit": "^9.5.10",
-                "psalm/plugin-phpunit": "^0.13",
-                "vimeo/psalm": "^4.13.1"
+                "filp/whoops": "^2.14.5",
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-diactoros": "^2.19",
+                "laminas/laminas-servicemanager": "^3.15",
+                "mezzio/mezzio-aurarouter": "^3.5",
+                "mezzio/mezzio-fastroute": "^3.7",
+                "mezzio/mezzio-laminasrouter": "^3.7",
+                "mockery/mockery": "^1.5.1",
+                "phpunit/phpunit": "^9.5.25",
+                "psalm/plugin-phpunit": "^0.17",
+                "vimeo/psalm": "^4.28"
             },
             "suggest": {
                 "filp/whoops": "^2.1 to use the Whoops error handler",
@@ -1490,7 +1489,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-06-29T21:47:57+00:00"
+            "time": "2022-10-11T08:04:06+00:00"
         },
         {
             "name": "mezzio/mezzio-fastroute",
