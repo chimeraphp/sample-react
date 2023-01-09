@@ -892,16 +892,16 @@
         },
         {
             "name": "laminas/laminas-httphandlerrunner",
-            "version": "2.3.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
-                "reference": "3c9491473b7decd8f329266a3cb6226a1f90594c"
+                "reference": "7a47834aaad7852816d2ec4fdbb0492163b039ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/3c9491473b7decd8f329266a3cb6226a1f90594c",
-                "reference": "3c9491473b7decd8f329266a3cb6226a1f90594c",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/7a47834aaad7852816d2ec4fdbb0492163b039ae",
+                "reference": "7a47834aaad7852816d2ec4fdbb0492163b039ae",
                 "shasum": ""
             },
             "require": {
@@ -913,9 +913,9 @@
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.4.0",
                 "laminas/laminas-diactoros": "^2.18",
-                "phpunit/phpunit": "^9.5.25",
-                "psalm/plugin-phpunit": "^0.17.0",
-                "vimeo/psalm": "^4.28"
+                "phpunit/phpunit": "^9.5.26",
+                "psalm/plugin-phpunit": "^0.18.0",
+                "vimeo/psalm": "^5.0.0"
             },
             "type": "library",
             "extra": {
@@ -955,7 +955,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-10-10T19:52:02+00:00"
+            "time": "2023-01-05T21:54:03+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
