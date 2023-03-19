@@ -11,7 +11,7 @@
         "php": "~8.1.0 || ~8.2.0",
         "ext-json": "*",
         "ext-pcntl": "*",
-        "chimera/bus-tactician": "^1.0.x-dev",
+        "chimera/bus-tactician": "0.4.0",
         "chimera/di-symfony": "^1.0.x-dev",
         "chimera/foundation": "^1.0.x-dev",
         "chimera/mapping": "^0.5.x-dev",
