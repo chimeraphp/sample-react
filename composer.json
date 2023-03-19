@@ -13,7 +13,7 @@
         "ext-pcntl": "*",
         "chimera/bus-tactician": "^1.0.x-dev",
         "chimera/di-symfony": "^1.0.x-dev",
-        "chimera/foundation": "^1.0.x-dev",
+        "chimera/foundation": "0.4.0",
         "chimera/mapping": "^0.5.x-dev",
         "chimera/routing": "^1.0.x-dev",
         "chimera/routing-mezzio": "^1.0.x-dev",
