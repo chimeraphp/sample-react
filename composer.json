@@ -17,9 +17,9 @@
         "chimera/mapping": "^0.5.x-dev",
         "chimera/routing": "^1.0.x-dev",
         "chimera/routing-mezzio": "^1.0.x-dev",
-        "lcobucci/di-builder": "^7.1",
+        "lcobucci/di-builder": "^7.2.1",
         "lcobucci/error-handling-middleware": "^1.4",
-        "middlewares/response-time": "^2.0",
+        "middlewares/response-time": "^2.0.1",
         "react/async": "^4.x-dev",
         "react/http": "^1.8"
     },
