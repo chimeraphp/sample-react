@@ -15,7 +15,7 @@
         "chimera/di-symfony": "^1.0.x-dev",
         "chimera/foundation": "^1.0.x-dev",
         "chimera/mapping": "^0.5.x-dev",
-        "chimera/routing": "^1.0.x-dev",
+        "chimera/routing": "0.4.0",
         "chimera/routing-mezzio": "^1.0.x-dev",
         "lcobucci/di-builder": "^7.2.1",
         "lcobucci/error-handling-middleware": "^1.4",
