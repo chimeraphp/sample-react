@@ -21,7 +21,7 @@
         "lcobucci/error-handling-middleware": "^1.4",
         "middlewares/response-time": "^2.0.1",
         "react/async": "^4.x-dev",
-        "react/http": "^1.8"
+        "react/http": "^1.9.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
