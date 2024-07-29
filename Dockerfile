@@ -1,4 +1,4 @@
-FROM php:8.2-alpine as base
+FROM php:8.3-alpine as base
 
 ENV APPLICATION_MODE=prod
 WORKDIR /opt/chimera/sample-react
